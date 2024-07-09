@@ -1,0 +1,13 @@
+<form class="bg-white p-5 m-5">
+  <p>{{data}}</p>
+  <div class="mb-3">
+    <label  for="exampleInputEmail1" class="form-label text-gray">Username</label>
+    <input (change)="accessUname($event)" type="text" class="form-control" [placeholder]="secondData"  aria-describedby="emailHelp">
+  </div>
+
+    <div class="mb-3 ">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input (change)="accessPSW($event)" type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <button (click)="login()" type="submit" class="btn btn-primary">login</button>
+  </form>
