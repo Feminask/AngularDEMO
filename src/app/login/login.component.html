@@ -2,12 +2,12 @@
   <p>{{data}}</p>
   <div class="mb-3">
     <label  for="exampleInputEmail1" class="form-label text-gray">Username</label>
-    <input #username type="text" class="form-control" [placeholder]="secondData"  aria-describedby="emailHelp">
+    <input [(ngModel)]="uname" name="un"  type="text" class="form-control" [placeholder]="secondData"  aria-describedby="emailHelp">
   </div>
 
     <div class="mb-3 ">
       <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input #password  type="password" class="form-control" id="exampleInputPassword1">
+      <input [(ngModel)]="psw" name="psw" type="password" class="form-control" id="exampleInputPassword1">
     </div>
-    <button (click)="login(username,password)" type="submit" class="btn btn-primary">login</button>
+    <button (click)="login()" type="submit" class="btn btn-primary">login</button>
   </form>

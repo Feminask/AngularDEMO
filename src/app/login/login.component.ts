@@ -12,9 +12,9 @@ export class LoginComponent implements OnInit {
   psw: any = '';
   constructor() {}
   ngOnInit(): void {}
-  login(a:any,b:any) {
-    this.uname=a.value
-    this.psw=b.value
+  login() {
+    // this.uname=a.value
+    // this.psw=b.value
     alert(`${this.uname} & ${this.psw}`);
   }
 //   accessUname(event: any) {
